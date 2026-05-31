@@ -1,6 +1,6 @@
 # Automatic Disfluency Restoration
 
-A multimodal deep learning system that predicts the original disfluent Hindi transcript from a clean text input and its corresponding audio — built for the NPPE-2 Kaggle competition as part of a Deep Learning course.
+A multimodal deep learning approach that predicts the original disfluent Hindi transcript from a clean text input and its corresponding audio — built for the NPPE-2 Kaggle competition as part of a Deep Learning course.
 
 ---
 
