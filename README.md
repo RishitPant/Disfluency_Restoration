@@ -141,7 +141,7 @@ Install with:
 pip install torch transformers librosa tqdm scikit-learn pandas numpy jiwer
 ```
 
-This notebook is designed to run on **Kaggle** (GPU T4 x2 recommended). To run locally, update `INPUT_DIR` and `AUDIO_DIR` paths and ensure a CUDA-enabled GPU is available.
+This notebook is designed to run on **Kaggle** (GPU T4 x2 recommended). To run locally, use the dataset from here: https://drive.google.com/drive/folders/1byRYerwp9hg60AvGC3h0JsoTC-l3majr?usp=sharing and update `INPUT_DIR` and `AUDIO_DIR` paths and ensure a CUDA-enabled GPU is available.
 
 ---
 
