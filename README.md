@@ -1,6 +1,6 @@
 # Automatic Disfluency Restoration
 
-A multimodal deep learning approach that predicts the original disfluent Hindi transcript from a clean text input and its corresponding audio — built for the NPPE-2 Kaggle competition as part of a Deep Learning course.
+A multimodal deep learning approach that predicts the original disfluent Hindi transcript from a clean text input and its corresponding audio — built as a part of Deep Learning course Kaggle competition.
 
 ---
 
@@ -159,10 +159,8 @@ This notebook is designed to run on **Kaggle** (GPU T4 x2 recommended). To run l
 
 ## Limitations & Future Improvements
 
-- **Validation metric mismatch** — the model is checkpointed on validation loss, but the competition metric is WER. Future work would compute WER on a held-out validation sample after each epoch (using `jiwer`) and checkpoint on that directly.
 - **Disfluency removal is exact-match only** — the data preparation step does not handle case variations or normalisation before matching against the disfluency list. A regex-based or unicode-normalised approach would be more robust for Hindi text.
 - **No explicit audio-text alignment** — the fusion is positional (concatenation), not attention-based. A cross-attention mechanism that aligns audio timestamps with text positions could improve recall of disfluencies that occur at specific points in the utterance.
-- **Single modality fallback** — when ASR output is empty (missing or unreadable audio), the model falls back to text-only input gracefully via the `build_multimodal()` function.
 
 ---
 
